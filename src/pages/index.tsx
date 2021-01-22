@@ -1,10 +1,11 @@
 import React from "react";
 import {GetServerSideProps} from "next";
+import CountUp from 'react-countup';
+
+//Components imports
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import SEO from "../components/SEO";
-
-import Virus from '../../public/virus.svg';
 
 
 interface BrazilData {
@@ -63,7 +64,16 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                           <div className="row">
                                               <div className="col">
                                                   <h5 className="card-title text-uppercase text-muted mb-0">Casos confirmados</h5>
-                                                  <span className="h2 font-weight-bold mb-0">{brazilData.data.cases}</span>
+                                                  <span className="h2 font-weight-bold mb-0">
+                                                      <CountUp
+                                                          start={0}
+                                                          end={brazilData.data.cases}
+                                                          duration={3.75}
+                                                          separator="."
+                                                          decimals={4}
+                                                          decimal="."
+                                                        />
+                                                  </span>
                                               </div>
                                               <div className="col-auto">
                                                   <div
@@ -89,7 +99,16 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                           <div className="row">
                                               <div className="col">
                                                   <h5 className="card-title text-uppercase text-muted mb-0">Óbitos</h5>
-                                                  <span className="h2 font-weight-bold mb-0">{brazilData.data.deaths}</span>
+                                                  <span className="h2 font-weight-bold mb-0">
+                                                      <CountUp
+                                                          start={0}
+                                                          end={brazilData.data.deaths}
+                                                          duration={3.75}
+                                                          separator="."
+                                                          decimals={4}
+                                                          decimal="."
+                                                      />
+                                                  </span>
                                               </div>
                                               <div className="col-auto">
                                                   <div
@@ -114,7 +133,16 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                           <div className="row">
                                               <div className="col">
                                                   <h5 className="card-title text-uppercase text-muted mb-0">Vacinadas</h5>
-                                                  <span className="h2 font-weight-bold mb-0">{brazilData.data.recovered}</span>
+                                                  <span className="h2 font-weight-bold mb-0">
+                                                      <CountUp
+                                                          start={0}
+                                                          end={brazilData.data.recovered}
+                                                          duration={3.75}
+                                                          separator="."
+                                                          decimals={4}
+                                                          decimal="."
+                                                      />
+                                                  </span>
                                               </div>
                                               <div className="col-auto">
                                                   <div
@@ -139,7 +167,13 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                           <div className="row">
                                               <div className="col">
                                                   <h5 className="card-title text-uppercase text-muted mb-0">Viraram jacaré</h5>
-                                                  <span className="h2 font-weight-bold mb-0">0</span>
+                                                  <span className="h2 font-weight-bold mb-0">
+                                                      <CountUp
+                                                          start={90000}
+                                                          end={0}
+                                                          duration={2.75}
+                                                      />
+                                                  </span>
                                               </div>
                                               <div className="col-auto">
                                                   <div
@@ -165,7 +199,7 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
           </div>
           <div className="container-fluid mt--6">
               <div className="row">
-                  <div className="col-xl-8">
+                  <div className="col-xl-7">
                       <div className="card">
                           <div className="card-header border-0">
                               <div className="row align-items-center">
@@ -193,13 +227,34 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                           São Paulo
                                       </th>
                                       <td>
-                                          {spData.cases}
+                                          <CountUp
+                                              start={spData.cases}
+                                              end={spData.cases}
+                                              duration={0}
+                                              separator="."
+                                              decimals={4}
+                                              decimal="."
+                                          />
                                       </td>
                                       <td>
-                                          {spData.deaths}
+                                          <CountUp
+                                              start={spData.deaths}
+                                              end={spData.deaths}
+                                              duration={0}
+                                              separator="."
+                                              decimals={4}
+                                              decimal="."
+                                          />
                                       </td>
                                       <td>
-                                          {spData.suspects}
+                                          <CountUp
+                                              start={spData.suspects}
+                                              end={spData.suspects}
+                                              duration={0}
+                                              separator="."
+                                              decimals={4}
+                                              decimal="."
+                                          />
                                       </td>
                                   </tr>
                                   <tr>
@@ -207,13 +262,34 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                           Rio de Janeiro
                                       </th>
                                       <td>
-                                          {rjData.cases}
+                                          <CountUp
+                                              start={rjData.cases}
+                                              end={rjData.cases}
+                                              duration={0}
+                                              separator="."
+                                              decimals={4}
+                                              decimal="."
+                                          />
                                       </td>
                                       <td>
-                                          {rjData.deaths}
+                                          <CountUp
+                                              start={rjData.deaths}
+                                              end={rjData.deaths}
+                                              duration={0}
+                                              separator="."
+                                              decimals={4}
+                                              decimal="."
+                                          />
                                       </td>
                                       <td>
-                                          {rjData.suspects}
+                                          <CountUp
+                                              start={rjData.suspects}
+                                              end={rjData.suspects}
+                                              duration={0}
+                                              separator="."
+                                              decimals={4}
+                                              decimal="."
+                                          />
                                       </td>
                                   </tr>
                                   <tr>
@@ -221,13 +297,34 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                           Paraná
                                       </th>
                                       <td>
-                                          {prData.cases}
+                                          <CountUp
+                                              start={prData.cases}
+                                              end={prData.cases}
+                                              duration={0}
+                                              separator="."
+                                              decimals={4}
+                                              decimal="."
+                                          />
                                       </td>
                                       <td>
-                                          {prData.deaths}
+                                          <CountUp
+                                              start={prData.deaths}
+                                              end={prData.deaths}
+                                              duration={0}
+                                              separator="."
+                                              decimals={4}
+                                              decimal="."
+                                          />
                                       </td>
                                       <td>
-                                          {prData.suspects}
+                                          <CountUp
+                                              start={prData.suspects}
+                                              end={prData.suspects}
+                                              duration={0}
+                                              separator="."
+                                              decimals={4}
+                                              decimal="."
+                                          />
                                       </td>
                                   </tr>
                                   <tr>
@@ -235,13 +332,34 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                           Minas Gerais
                                       </th>
                                       <td>
-                                          {mgData.cases}
+                                          <CountUp
+                                              start={mgData.cases}
+                                              end={mgData.cases}
+                                              duration={0}
+                                              separator="."
+                                              decimals={4}
+                                              decimal="."
+                                          />
                                       </td>
                                       <td>
-                                          {mgData.deaths}
+                                          <CountUp
+                                              start={mgData.deaths}
+                                              end={mgData.deaths}
+                                              duration={0}
+                                              separator="."
+                                              decimals={4}
+                                              decimal="."
+                                          />
                                       </td>
                                       <td>
-                                          {mgData.suspects}
+                                          <CountUp
+                                              start={mgData.suspects}
+                                              end={mgData.suspects}
+                                              duration={0}
+                                              separator="."
+                                              decimals={4}
+                                              decimal="."
+                                          />
                                       </td>
                                   </tr>
                                   <tr>
@@ -249,13 +367,34 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                           Amazonas
                                       </th>
                                       <td>
-                                          {amData.cases}
+                                          <CountUp
+                                              start={amData.cases}
+                                              end={amData.cases}
+                                              duration={0}
+                                              separator="."
+                                              decimals={4}
+                                              decimal="."
+                                          />
                                       </td>
                                       <td>
-                                          {amData.deaths}
+                                          <CountUp
+                                              start={amData.deaths}
+                                              end={amData.deaths}
+                                              duration={0}
+                                              separator="."
+                                              decimals={4}
+                                              decimal="."
+                                          />
                                       </td>
                                       <td>
-                                          {amData.suspects}
+                                          <CountUp
+                                              start={amData.suspects}
+                                              end={amData.suspects}
+                                              duration={0}
+                                              separator="."
+                                              decimals={4}
+                                              decimal="."
+                                          />
                                       </td>
                                   </tr>
                                   </tbody>
@@ -263,7 +402,7 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                           </div>
                       </div>
                   </div>
-                  <div className="col-xl-4">
+                  <div className="col-xl-5">
                       <div className="card">
                           <div className="card-header border-0">
                               <div className="row align-items-center">
@@ -287,14 +426,34 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                   <tbody>
                                   <tr style={{height: 100}}>
                                       <th scope="row" style={{fontSize: 18}}>
-                                          {worldData.Global.TotalConfirmed}
+                                          <CountUp
+                                              start={0}
+                                              end={worldData.Global.TotalConfirmed}
+                                              duration={3.75}
+                                              separator="."
+                                              decimals={4}
+                                              decimal="."
+                                          />
                                       </th>
                                       <th scope="row" style={{fontSize: 18}}>
-                                          {worldData.Global.TotalDeaths}
+                                          <CountUp
+                                              start={0}
+                                              end={worldData.Global.TotalDeaths}
+                                              duration={3.75}
+                                              separator="."
+                                              decimals={4}
+                                              decimal="."
+                                          />
                                       </th>
                                       <th scope="row" style={{fontSize: 18}}>
-                                          {worldData.Global.TotalRecovered}
-                                      </th>
+                                          <CountUp
+                                              start={0}
+                                              end={worldData.Global.TotalRecovered}
+                                              duration={3.75}
+                                              separator="."
+                                              decimals={4}
+                                              decimal="."
+                                          />                                      </th>
                                   </tr>
                                   </tbody>
                               </table>
