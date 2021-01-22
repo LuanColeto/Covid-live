@@ -27,7 +27,10 @@ const Footer: React.FC = () => {
                             <a href="https://covid19-brazil-api.now.sh/" className="nav-link"
                                target="_blank">API utilizada</a>
                         </li>
-
+                        <li className="nav-item">
+                            <a href="https://github.com/LuanColeto/Covid-live" className="nav-link"
+                               target="_blank">Github</a>
+                        </li>
                     </ul>
                 </div>
             </div>

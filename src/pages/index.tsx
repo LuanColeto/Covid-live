@@ -454,7 +454,8 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                               separator="."
                                               decimals={4}
                                               decimal="."
-                                          />                                      </th>
+                                          />
+                                      </th>
                                   </tr>
                                   </tbody>
                               </table>
