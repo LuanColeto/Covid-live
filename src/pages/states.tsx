@@ -81,7 +81,7 @@ export default function States({  statesData  }: StatesProps) {
                                     <tbody>
                                     {statesData && (
                                         statesData.data.map(state => (
-                                            <tr>
+                                            <tr key={state.uid}>
                                                 <th scope="row">
                                                     {state.state}
                                                 </th>
