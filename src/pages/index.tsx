@@ -411,7 +411,7 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                       <h3 className="mb-0">Mundo inteiro</h3>
                                   </div>
                                   <div className="col text-right">
-                                      <a href="#!" className="btn btn-sm btn-primary">Veja tudo</a>
+                                      <Link href="/countries" passHref>Veja tudo</Link>
                                   </div>
                               </div>
                           </div>
