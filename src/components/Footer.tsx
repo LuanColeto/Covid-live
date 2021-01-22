@@ -15,8 +15,7 @@ const Footer: React.FC = () => {
             <div className="row align-items-center justify-content-lg-between">
                 <div className="col-lg-6">
                     <div className="copyright text-center  text-lg-left  text-muted">
-                        &copy; 2020 <a href="https://www.creative-tim.com" className="font-weight-bold ml-1"
-                                       target="_blank">Covid live</a>
+                        &copy; 2020 <a href="/" className="font-weight-bold ml-1">Covid live</a>
                     </div>
                 </div>
                 <div className="col-lg-6">
@@ -25,7 +24,7 @@ const Footer: React.FC = () => {
                             <a href="https://www.creative-tim.com" className="nav-link" target="_blank">Sobre nós</a>
                         </li>
                         <li className="nav-item">
-                            <a href="https://documenter.getpostman.com/view/10808728/SzS8rjbc" className="nav-link"
+                            <a href="https://covid19-brazil-api.now.sh/" className="nav-link"
                                target="_blank">API utilizada</a>
                         </li>
 
