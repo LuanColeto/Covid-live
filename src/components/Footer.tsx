@@ -20,9 +20,9 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="col-lg-6">
                     <ul className="nav nav-footer justify-content-center justify-content-lg-end">
-                        <li className="nav-item">
-                            <a href="https://www.creative-tim.com" className="nav-link" target="_blank">Sobre nós</a>
-                        </li>
+                        {/*<li className="nav-item">*/}
+                        {/*    <a href="https://www.creative-tim.com" className="nav-link" target="_blank">Sobre nós</a>*/}
+                        {/*</li>*/}
                         <li className="nav-item">
                             <a href="https://covid19-brazil-api.now.sh/" className="nav-link"
                                target="_blank">API utilizada</a>
