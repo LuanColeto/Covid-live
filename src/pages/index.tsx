@@ -1,6 +1,7 @@
 import React from "react";
 import {GetServerSideProps} from "next";
 import CountUp from 'react-countup';
+import Link from 'next/link';
 
 //Components imports
 import Footer from "../components/Footer";
@@ -207,7 +208,7 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                       <h3 className="mb-0">Dados por estado</h3>
                                   </div>
                                   <div className="col text-right">
-                                      <a href="#!" className="btn btn-sm btn-primary">Veja tudo</a>
+                                      <Link href="/states" passHref>Veja tudo</Link>
                                   </div>
                               </div>
                           </div>
