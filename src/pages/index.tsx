@@ -69,7 +69,7 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                                       <CountUp
                                                           start={0}
                                                           end={brazilData.data.cases}
-                                                          duration={3.75}
+                                                          duration={2.75}
                                                           separator="."
                                                           decimals={4}
                                                           decimal="."
@@ -104,7 +104,7 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                                       <CountUp
                                                           start={0}
                                                           end={brazilData.data.deaths}
-                                                          duration={3.75}
+                                                          duration={2.75}
                                                           separator="."
                                                           decimals={4}
                                                           decimal="."
@@ -138,7 +138,7 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                                       <CountUp
                                                           start={0}
                                                           end={brazilData.data.recovered}
-                                                          duration={3.75}
+                                                          duration={2.75}
                                                           separator="."
                                                           decimals={4}
                                                           decimal="."
@@ -430,7 +430,7 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                           <CountUp
                                               start={0}
                                               end={worldData.Global.TotalConfirmed}
-                                              duration={3.75}
+                                              duration={2.75}
                                               separator="."
                                               decimals={4}
                                               decimal="."
@@ -440,7 +440,7 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                           <CountUp
                                               start={0}
                                               end={worldData.Global.TotalDeaths}
-                                              duration={3.75}
+                                              duration={2.75}
                                               separator="."
                                               decimals={4}
                                               decimal="."
@@ -450,7 +450,7 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                           <CountUp
                                               start={0}
                                               end={worldData.Global.TotalRecovered}
-                                              duration={3.75}
+                                              duration={2.75}
                                               separator="."
                                               decimals={4}
                                               decimal="."
