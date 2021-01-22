@@ -2,6 +2,7 @@ import React from "react";
 import {GetServerSideProps} from "next";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import SEO from "../components/SEO";
 
 import Virus from '../../public/virus.svg';
 
@@ -45,6 +46,7 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
   return (
       <div className="main-content" id="panel">
           <Header />
+          <SEO title="Dashboard" shouldExcludeTitleSuffix={true} description="Veja o resumo da covid-19 no Brasil e no mundo" />
           <div className="header bg-primary pb-6">
               <div className="container-fluid">
                   <div className="header-body">
