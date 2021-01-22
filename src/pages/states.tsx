@@ -91,8 +91,6 @@ export default function States({  statesData  }: StatesProps) {
                                                         end={state.cases}
                                                         duration={0}
                                                         separator="."
-                                                        decimals={4}
-                                                        decimal="."
                                                     />
                                                 </td>
                                                 <td>
@@ -101,8 +99,6 @@ export default function States({  statesData  }: StatesProps) {
                                                         end={state.deaths}
                                                         duration={0}
                                                         separator="."
-                                                        decimals={4}
-                                                        decimal="."
                                                     />
                                                 </td>
                                                 <td>
@@ -111,8 +107,6 @@ export default function States({  statesData  }: StatesProps) {
                                                         end={state.suspects}
                                                         duration={0}
                                                         separator="."
-                                                        decimals={4}
-                                                        decimal="."
                                                     />
                                                 </td>
                                             </tr>

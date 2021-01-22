@@ -89,8 +89,6 @@ export default function Countries({  countriesData  }: StatesProps) {
                                                         end={country.confirmed}
                                                         duration={0}
                                                         separator="."
-                                                        decimals={4}
-                                                        decimal="."
                                                     />
                                                 </td>
                                                 <td>
@@ -99,8 +97,6 @@ export default function Countries({  countriesData  }: StatesProps) {
                                                         end={country.deaths}
                                                         duration={0}
                                                         separator="."
-                                                        decimals={4}
-                                                        decimal="."
                                                     />
                                                 </td>
                                                 <td>
@@ -109,8 +105,6 @@ export default function Countries({  countriesData  }: StatesProps) {
                                                         end={country.recovered}
                                                         duration={0}
                                                         separator="."
-                                                        decimals={4}
-                                                        decimal="."
                                                     />
                                                 </td>
                                             </tr>
