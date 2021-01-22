@@ -68,11 +68,11 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                                   <span className="h2 font-weight-bold mb-0">
                                                       <CountUp
                                                           start={0}
-                                                          end={brazilData.data.cases}
+                                                          end={brazilData.data.confirmed}
                                                           duration={2.75}
                                                           separator="."
-                                                          decimals={4}
-                                                          decimal="."
+                                                          decimals={2}
+                                                          decimal=","
                                                         />
                                                   </span>
                                               </div>
@@ -106,8 +106,8 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                                           end={brazilData.data.deaths}
                                                           duration={2.75}
                                                           separator="."
-                                                          decimals={4}
-                                                          decimal="."
+                                                          decimals={2}
+                                                          decimal=","
                                                       />
                                                   </span>
                                               </div>
@@ -140,9 +140,8 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                                           end={brazilData.data.recovered}
                                                           duration={2.75}
                                                           separator="."
-                                                          decimals={4}
-                                                          decimal="."
-                                                      />
+                                                          decimals={2}
+                                                          decimal=","                                                      />
                                                   </span>
                                               </div>
                                               <div className="col-auto">
@@ -233,7 +232,6 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                               end={spData.cases}
                                               duration={0}
                                               separator="."
-                                              decimals={4}
                                               decimal="."
                                           />
                                       </td>
@@ -243,7 +241,6 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                               end={spData.deaths}
                                               duration={0}
                                               separator="."
-                                              decimals={4}
                                               decimal="."
                                           />
                                       </td>
@@ -253,7 +250,6 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                               end={spData.suspects}
                                               duration={0}
                                               separator="."
-                                              decimals={4}
                                               decimal="."
                                           />
                                       </td>
@@ -268,7 +264,6 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                               end={rjData.cases}
                                               duration={0}
                                               separator="."
-                                              decimals={4}
                                               decimal="."
                                           />
                                       </td>
@@ -278,7 +273,6 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                               end={rjData.deaths}
                                               duration={0}
                                               separator="."
-                                              decimals={4}
                                               decimal="."
                                           />
                                       </td>
@@ -288,7 +282,6 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                               end={rjData.suspects}
                                               duration={0}
                                               separator="."
-                                              decimals={4}
                                               decimal="."
                                           />
                                       </td>
@@ -303,7 +296,6 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                               end={prData.cases}
                                               duration={0}
                                               separator="."
-                                              decimals={4}
                                               decimal="."
                                           />
                                       </td>
@@ -313,7 +305,6 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                               end={prData.deaths}
                                               duration={0}
                                               separator="."
-                                              decimals={4}
                                               decimal="."
                                           />
                                       </td>
@@ -323,7 +314,6 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                               end={prData.suspects}
                                               duration={0}
                                               separator="."
-                                              decimals={4}
                                               decimal="."
                                           />
                                       </td>
@@ -338,7 +328,6 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                               end={mgData.cases}
                                               duration={0}
                                               separator="."
-                                              decimals={4}
                                               decimal="."
                                           />
                                       </td>
@@ -348,7 +337,6 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                               end={mgData.deaths}
                                               duration={0}
                                               separator="."
-                                              decimals={4}
                                               decimal="."
                                           />
                                       </td>
@@ -358,7 +346,6 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                               end={mgData.suspects}
                                               duration={0}
                                               separator="."
-                                              decimals={4}
                                               decimal="."
                                           />
                                       </td>
@@ -373,7 +360,7 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                               end={amData.cases}
                                               duration={0}
                                               separator="."
-                                              decimals={4}
+                                              decimals={3}
                                               decimal="."
                                           />
                                       </td>
@@ -383,7 +370,7 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                               end={amData.deaths}
                                               duration={0}
                                               separator="."
-                                              decimals={4}
+                                              decimals={3}
                                               decimal="."
                                           />
                                       </td>
@@ -393,7 +380,7 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                               end={amData.suspects}
                                               duration={0}
                                               separator="."
-                                              decimals={4}
+                                              decimals={3}
                                               decimal="."
                                           />
                                       </td>
@@ -432,7 +419,6 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                               end={worldData.Global.TotalConfirmed}
                                               duration={2.75}
                                               separator="."
-                                              decimals={4}
                                               decimal="."
                                           />
                                       </th>
@@ -442,7 +428,6 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                               end={worldData.Global.TotalDeaths}
                                               duration={2.75}
                                               separator="."
-                                              decimals={4}
                                               decimal="."
                                           />
                                       </th>
@@ -452,7 +437,6 @@ export default function Home({ brazilData, spData, rjData, prData, mgData, amDat
                                               end={worldData.Global.TotalRecovered}
                                               duration={2.75}
                                               separator="."
-                                              decimals={4}
                                               decimal="."
                                           />
                                       </th>
